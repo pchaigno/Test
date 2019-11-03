@@ -1,0 +1,10 @@
+language: c
+dist: trusty
+script:
+  - cat /proc/self/stat
+matrix:
+  include:
+    - compiler: gcc
+      arch: arm64
+    - compiler: gcc
+      arch: amd64
